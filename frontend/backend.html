@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mandatory Node.js</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- Bootstrap 4.5 CSS -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Top Bar -->
+<div class="top-bar">
+	<div class="container">
+		<div class="col-12 text-right">
+		</div>
+	</div>
+</div>
+
+	<!-- End Top Bar -->
+
+
+	<!-- Navigation -->
+<nav class="navbar navbar-light navbar-expand-lg">
+	<div class="container">
+		<h1>MANDATORY 1 |</h1>
+		<h1><br></h1>
+		
+		<p>En del af faget Node.js<p>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+		data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">Lavet af Birgith J. Christiansen</a></li>
+		</ul>
+	</div>
+	</div>
+</nav>
+
+
+	<!-- Calendar Image-->
+	<div class="top-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+                    <br><br><br><br><br>
+                    <h3>NPM og Local Modules </h3>
+                   <p> Hvad: <br>
+NPM står for Node Package Manager.
+Det er verdens største software register, og det indeholder over 800.000 software pakker.
+Det kaldes for lokale moduler, da det er pakker man henter og opbevarer som dependencies 
+og pakker i sit projekt, i modsætningen til de globale, som man kan gøre brug af uden at hente pakker ned.</p>
+<p>Hvorfor: <br>
+Man kan derfor benytte NPM til at hente software pakker, som man ønsker at gøre brug af i sin applikation. Det er gratis at benytte sig af, samt open-source.
+Grunden til at det er så populært, er at det er både er nemt, enkelt og utroligt hurtigt at gøre brug af NPM.
+NPM er også brugbart, da der er mange ting som de fleste applikationer gør brug af, dette kan f.eks. være validaton af email. 
+Her kan man benytte sig af en af NPM software pakkerne, som kan gøre arbejdet for en.</p>
+<p>Hvordan: <br>
+For at kunne bruge NPM, skal man have Node.js installeret på forhånd.
+Når man installerer node, får man også adgang til NPM.
+Så skal man initiere NPM til projektet, dette gør man med kommandoen ”npm init” i terminalen.
+Dette vil skabe en helt ny fil til projektet, som er en ”package.json” fil.
+package.json filen indeholder dependencies, og det er her de fremtidige npm pakker som man gør brug af, kommer til at ses.
+Når projektet er initieret og json filen er skabt, kan man installere de NPM pakker, som man ønsker at gøre brug af.
+Man bruger terminalen, hvor man kan skrive kommandoer ind som ønskes eksekveret.
+For at installere en NPM software pakke skriver man i terminalen:
+npm install efterfulgt af pakkens navn.</p>
+
+<h3>Node Core Modules</h3>
+<p>Module system:
+    Require funktionen – loader moduler ind i applikationen.
+    Require funktionen benyttes, til at loade modulerne ind i systemet, så man kan benytte dem i sin applikation.
+    Hvis vi ønsker at benytte metoderne under f.eks. FilePrinter modulet, skal vi først benytte require funktionen til at hente modulet ind i applikationen.
+    Require funktionen returnerer alt fra modulet som vi har angivet.
+    Det skal gemmes i en variabel således:
+ 
+    const fs = require(’fs’)
+     
+    Nu kan man bruge metoderne fra modulet FilePrinter (fs), og dets dertilhørende metoder.
+    F.eks. er writeFileSync() og appendFileSync() en del af FilePrinter modulet.
+    Nu kan vi bruge metoderne, ved at binde den til const fs, som indeholder require(’fs’).
+    Her er et eksempel.
+    
+    const fs = require(’fs’)
+     
+    fs.writeFileSync(’eksempel.txt’, ’noget valgfri tekst som man vil have gemt i sin tekst fil’)
+     
+    Bemærk at metoden writeFineSync tager 2 parameter – den vil vide hvilken fil den skal skrive til, og hvad den skal skrive.
+    
+    Man kan læse mere om de forskellige moduler og hvilke metoder de indeholder, inde på hjemmesiden: www.nodejs.org
+    </p>
+
+    <h3>Funktioner</h3>
+        <p>Functions er objekter der kan blive manipuleret med. Extended og sendt rundt som data. En function ville normalt se ud som:<br>
+            function functionName() {<br>
+            // function body<br>
+            // optional return;<br>
+            } <br>
+        alle funtioner retunerer en værdi</p>
+        <h3>Callbacks</h3>
+        <p>En call er en function som sættes i en andens function parameter og bliver eksekvere i den pågældende function.
+            Bruges ofes i asynchronous programmering.
+            Man bruger callbacks når man f.eks. lavet et API call. Mange requests uden at skulle vente på en function retunerer en værdi.</p>
+        <h3>Express</h3>
+        <p>Express er et hurtigt framework som bruges af Node.js, det hentes ind i projektet ved hjælp af npm install. </p>
+                    
+
+
+<br>
+<a href="/index" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Tilbage til oversigten ></a>
+
+
+
+</div>
+	<div class="col">
+        <br><br><br><br><br>
+        <h3>Require funktionen henter lokale npm moduler ind:</h3>
+        <img src="ressources/localmodules.png" width="500" height="150" style="float:right">
+	</div>
+</div>
+</div>
+</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- Bootstrap 4.5 JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Font Awesome -->
+	<script src="js/all.min.js"></script>
+
+	<!-- End Script Source Files -->
+</body>
+</html>
